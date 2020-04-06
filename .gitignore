@@ -1,0 +1,12 @@
+.ipynb_checkpoints
+__pycache__
+**/.DS_Store
+*.png
+*.txt
+*.zip
+log/
+*.pyc
+.idea/
+*.tar
+*.pth.tar
+*.jpg
