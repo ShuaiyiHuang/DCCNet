@@ -206,7 +206,7 @@ for epoch in range(1, args.num_epochs+1):
 
     # remember best loss
     is_best = val_pcks[epoch - 1] > best_val_pck
-    best_val_pck = max(val_loss[epoch - 1], best_val_pck)
+    best_val_pck = max(val_pcks[epoch - 1], best_val_pck)
     save_checkpoint({
         'epoch': epoch,
         'args': args,
