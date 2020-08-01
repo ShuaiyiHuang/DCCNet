@@ -25,7 +25,7 @@ The PF-Willow and TSS dataset (used for evaluation) can be downloaded by browsin
 
 ### Getting the trained models
 
-The trained models trained on PF-Pascal (`best_dccnet.pth.tar`) can be dowloaded by browsing to the `trained_models/` folder and running `download.sh` (comming soon).
+The trained models trained on PF-Pascal (`best_dccnet.pth.tar`) can be dowloaded [[here](https://pan.baidu.com/s/1GESlvTqmLkUZmdidvDs_Qg)] (passwd:y42d). Put pretrained model under `trained_models/` folder for further evaluation.
 
 
 ## Training
@@ -38,13 +38,13 @@ To train a model, run `train_dccnet.sh` under `scripts` folder to reproduce our 
 Evaluation for PF-Pascal and PF-Willow is implemented in the `eval_pf_pascal.py` and `eval_pf_willow.py` file respectively. You can run the evaluation in the following way: 
 
 ```bash
-python eval_pf_pascal.py --checkpoint trained_models/[checkpoint name]
+python eval_pf_pascal.py --checkpoint trained_models/best_dccnet.pth.tar
 ```
 
 Evaluation for TSS is implemented in the `eval_tss.py` file. You can run the evaluation in the following way: 
 
 ```bash
-python eval_tss.py --checkpoint trained_models/[checkpoint name]
+python eval_tss.py --checkpoint trained_models/best_dccnet.pth.tar
 ```
 
 This will generate a series of flow files in the `datasets/dccnet_results` folder that then need to be fed to the TSS evaluation Matlab code. 
